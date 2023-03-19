@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from 'react-player';
 
 function Fruits(props) {
     const [fruits] = React.useState([
@@ -9,7 +10,9 @@ function Fruits(props) {
 
     return (
         <div>
-            {props.fruits.map(f => <p key={f.id}>{f.id} {f.fruitName}</p>)}
+            HI !
+            {/* {props.fruits.map(f => <p key={f.id}>{f.id} {f.fruitName}</p>)} */}
+            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
         </div>
     );
 };
